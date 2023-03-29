@@ -1,0 +1,98 @@
+.Logo{
+    margin: 0;
+    padding: 15px;
+    font-family: Chomsky;
+    font-size: 10vh;
+    font-weight: 300;
+
+}
+.HrefNavbarForoLabel{
+  display: flex;
+  font-family: 'nyt-cheltenham';
+  justify-content: center;
+}
+
+
+.navBar{
+  background-color: #000000;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Sub-Logo{
+  font-family: 'IBM Plex Mono', monospace;
+  margin: 0%;
+  background-color: #000000;
+  color: #fff;
+  display: flex;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  font-size: large;
+}
+
+@media (max-width:700px) {
+    .artwork-container{
+        grid-template-columns: minmax(15vh, 50vh) minmax(15vh, 50vh);
+    }
+    .Logo{
+        font-size: 8vh;
+    }
+    .NavbarForoLabel{
+        font-size: large;
+        width: 30vw;
+        margin-bottom: -20px;
+    }
+}
+@media (max-width:630px) {
+    .NavbarForoLabel{
+        font-size: medium;
+        width: 25vw;
+    }
+}
+@media (max-width:560px) {
+    .NavbarForoLabel{
+        font-size: small;
+        width: 20vw;
+    }
+}
+@media (max-width:530px) {
+    .NavbarForoLabel{
+        font-size: xx-small;
+        margin-bottom: 0px;
+    }
+}
+@media (max-width:510px) {
+    .Logo{
+       font-size: xxx-large;
+    }
+
+    .NavbarForoLabel{
+        font-size: small;
+        width: 120px;
+    }
+}
+@media (max-width:360px) {
+    .Logo{
+       font-size: xxx-large;
+    }
+    .HrefNavbarForoLabel{
+        scale: .8;
+    }
+}
+@media (max-width:335px) {
+    .Logo{
+       font-size: x-large;
+       font-weight: 100;
+    }
+    .NavbarForoLabel{
+        font-size: x-small;
+    }
+}
+@media (max-width:250px) {
+    .NavbarForoLabel{
+        height: 3vh;
+        width: 45vw;
+    }
+}

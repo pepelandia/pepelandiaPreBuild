@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,100;8..144,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    align-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+.headerPhoto{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.tituloColumna{
+    margin-top: .5rem;
+    padding: .5rem 0 2rem 0;
+    text-align: center;
+}
+.body{
+    height: 100%;
+}
+.AuthorPhoto{
+    border: solid;
+    padding: 5px;
+    width: 25vh;
+}
+.ContainerHeader{
+    display: flex;
+    padding: 50px 120px 50px 120px;
+}
+.jerepNews{
+    font-family: 'Roboto Serif', serif;
+    font-weight: 400;
+    font-size: 6.5rem;
+    text-align: initial;
+    padding: 0 0 0 50px;
+}
+
+.body{
+    margin: 1% 5% 1% 5% ;
+    border-left: solid 2px black;
+    border: solid 2px black;
+}
+
+.autorNews {
+    font-size: 2rem;
+    padding: 0px 0px 0px 50px;
+    text-align: initial;
+    font-weight: 100;
+}
+.edition{
+    font-size: 2rem;
+    padding: 0px 0px 0px 50px;
+    Font-weight: 100;
+}
+.textBody {
+    padding: 50px 120px;
+    text-align: justify;
+    font-size: 24px;
+    line-height: 1.4;
+    overflow-wrap: break-word;
+    letter-spacing: -.8px;
+}
+.InformationContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+@media (max-width: 946px) {
+
+    .tituloColumna {
+        font-size: 25px;
+    }
+    .InformationContainer {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+    }
+    .ContainerHeader{
+        flex-direction: column;
+        padding: 15px 10px 15px 10px;    }
+    .textBody{
+        padding: 40px 60px 40px 60px;
+        font-size: 14px;
+        letter-spacing: -.5px;
+    }
+    .jerepNews{
+        text-align: center;
+        padding: 0 
+    }
+}
+
+@media (max-width: 600px) {
+    .jerepNews {
+        font-size: 45px;
+        text-align: center;
+        padding: 0;
+    }
+    .InformationContainer {
+        padding: 5px 25px 0px 25px;
+    }
+    .autorNews {
+        font-size: 1.2rem;
+        padding: 0;
+        font-weight: 100;
+    }
+    .edition {
+        font-size: 1.2rem;
+        padding: 0;
+        Font-weight: 100;
+    }
+    .ContainerHeader {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+    .textBody{
+        padding: 20px;
+    }
+}
+
+@media (max-width: 410px) {
+    .textBody{
+        padding: 15px 20px 15px 20px;
+    }
+    .jerepNews {
+        font-size: 60px;
+
+    }
+}
+
+@media (max-width: 266px) {
+    .AuthorPhoto{
+        width: 15vh;
+    } 
+}

@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,300&family=Noto+Sans+Tagbanwa&display=swap');
+
+.container {
+  background-color: #fff;
+  padding: 0.5rem;
+  position: relative;
+  border: 1px solid black;
+  box-shadow: 4px 4px 8px rgba(var(--text-color-rgb), 0.04);
+  transition: all 0.1s;
+  transform: scale(0.95);
+  margin-top: 2vh;
+}
+
+.container:hover {
+  transform: scale(1);
+}
+
+.asd {
+  background-color: #232323;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 2.14 / 3;
+}
+
+.holder {
+  display: contents;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.imagen {
+  height: 100%;
+}
+
+.token-preview {
+  position: relative;
+}
+
+.cardTitle,
+.cardArtist,
+.cardEds {
+  margin: 0;
+  font-size: 25px;
+  font-weight: 200;
+}
+
+.cardTitle {
+  text-align: center;
+  color: black;
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 900;
+  letter-spacing: 1px;
+  padding: 0.3rem;
+  font-size: 32px;
+}
+
+.cardArtist {
+  text-align: center;
+  font-weight: 200;
+  font-size: 25px;
+}
+
+.cardArtist:hover {
+  transition: 0.2s all;
+  transform: scale(1.2);
+}
+
+.cardEds {
+  text-align: initial;
+  padding-right: 1%;
+  font-size: 25px;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: large;
+}
+
+@media (max-width: 560px) {
+  .responsiveBox {
+    padding: 10px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+
+}
+
+@media (max-width: 460px) {
+  .cardTitle {
+    font-size: calc(100% + 1.6vw);
+  }
+  .cardArtist,
+  .cardEds {
+    font-size: large;
+  }
+  .cardBody {
+    padding: 0;
+  }
+
+}
+@media (max-width: 380px) {
+  .cardTitle {
+    font-size: calc(100% + 1.2vw);
+  }
+  .cardArtist,
+  .cardEds {
+    font-size: large;
+  }
+  .cardBody {
+    padding: 0;
+  }
+
+}
+@media (max-width: 350px) {
+  .cardTitle {
+    font-size: calc(100% + .6vw);
+  }
+  .cardArtist {
+    font-size: calc(100% + .4vw);
+  }
+  .responsiveBox {
+    padding: 10px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 300px) {
+  .cardArtist,
+  .cardEds {
+    font-size: large;
+  }
+  .cardBody {
+    padding: 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  .artowrk-container {
+    display: grid;
+    grid-template-columns: minmax(20vh, 45vh) minmax(20vh, 45vh) minmax(20vh, 45vh);
+  }
+}
+
+/* Vendor prefixes */
+.container,
+.asd,
+.holder {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.asd::before {
+  content: '';
+  display: block;
+  padding-top: 75%;
+}
+
+.asd::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}

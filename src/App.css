@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,300&family=Noto+Sans+Tagbanwa&display=swap');
+
+@font-face {
+  font-family: Chomsky;
+  src: url('./Fonts/Chomsky.otf') format('truetype');
+  font-style: normal;
+}
+*{
+  cursor: url(Raton.cur),auto;
+  top: 0;
+  left: 0;
+  transform: translate(
+    clamp(0px, calc(var(--x) * 1), calc(100vw - 20px)),
+    clamp(0px, calc(var(--y) * 1), calc(100vh - 20px))
+  );
+  transform: translate(calc(var(--x) * 1), calc(var(--y) * 1));
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  display: flex;
+}
+
+.ContainerBody{
+  display: flex;
+}
+
+
+.LateralPanel{
+  margin: 0;
+  padding: 0;
+  background: #000;
+  color: #fff;
+
+}
+
+.CartBody{
+  background-color: #0a1a0a;
+}
+
+ .NavbarForoLabel {
+  letter-spacing: 0.8px;
+  margin-right: 3vw;
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #000000;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 22px;
+}
+.NavbarForoLabel:active {
+  cursor: url(clik.cur),auto;
+
+}
+.NavbarForoLabel:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.NavbarForoLabel:hover {
+  box-shadow: #67ff498f 0 4px 8px, #1799289a 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-3px);
+}
+
+.NavbarForoLabel:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
